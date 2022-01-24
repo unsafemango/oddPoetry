@@ -1,0 +1,96 @@
+[
+  {
+    "id": 1,
+    "image": "../img/frost.jpeg",
+    "iimage": "img/frost.jpeg",
+    "name": "Robert Frost",
+    "bio": [
+      "Robert Frost was born in San Francisco, but his family moved to Lawrence, Massachusetts, in 1884 following his father’s death. The move was actually a return, for Frost’s ancestors were originally New Englanders, and Frost became famous for his poetry’s engagement with New England locales, identities, and themes. Frost graduated from Lawrence High School, in 1892, as class poet (he also shared the honor of co-valedictorian with his wife-to-be Elinor White), and two years later, the New York Independent accepted his poem entitled “My Butterfly,” launching his status as a professional poet with a check for $15.00. Frost's first book was published around the age of 40, but he would go on to win a record four Pulitzer Prizes and become the most famous poet of his time, before his death at the age of 88.",
+      "",
+      "To celebrate his first publication, Frost had a book of six poems privately printed; two copies of Twilight were made—one for himself and one for his fiancee. Over the next eight years, however, he succeeded in having only 13 more poems published. During this time, Frost sporadically attended Dartmouth and Harvard and earned a living teaching school and, later, working a farm in Derry, New Hampshire. But in 1912, discouraged by American magazines’ constant rejection of his work, he took his family to England, where he found more professional success. Continuing to write about New England, he had two books published, A Boy’s Will (1913) and North of Boston (1914), which established his reputation so that his return to the United States in 1915 was as a celebrated literary figure. Holt put out an American edition of North of Boston in 1915, and periodicals that had once scorned his work now sought it.",
+      "",
+      "Frost’s position in American letters was cemented with the publication of North of Boston, and in the years before his death he came to be considered the unofficial poet laureate of the United States. On his 75th birthday, the US Senate passed a resolution in his honor which said, “His poems have helped to guide American thought and humor and wisdom, setting forth to our minds a reliable representation of ourselves and of all men.” In 1955, the State of Vermont named a mountain after him in Ripton, the town of his legal residence; and at the presidential inauguration of John F. Kennedy in 1961, Frost was given the unprecedented honor of being asked to read a poem. Frost wrote a poem called “Dedication” for the occasion, but could not read it given the day’s harsh sunlight. He instead recited “The Gift Outright,” which Kennedy had originally asked him to read, with a revised, more forward-looking, last line."
+    ],
+    "type": "poet",
+    "year": "1874 - 1973",
+    "region": "US"
+  },
+  {
+    "id": 2,
+    "image": "../img/randall.jpeg",
+    "iimage": "img/randall.jpeg",
+    "name": "Randall Jarrell",
+    "bio": [
+      "Poet and critic Randall Jarrell was born in Nashville, Tennessee. As a child, he spent time in Los Angeles, where his grandparents lived, and he would later write movingly about the city in “The Lost World,” one of his best-known poems. Jarrell’s collections of poetry included Blood for a Stranger (1942), two collections based on his experiences as an Air Force training navigator in World War II—Little Friend, Little Friend (1945) and Losses (1948)—and the highly acclaimed The Woman at the Washington Zoo (1960), which won the National Book Award, and The Lost World (1965). A volume of Complete Poems (1969) was published posthumously. In his later poetry, Jarrell frequently adopted the personae of women, crafting narratives of ordinary life and domestic constraint in what Karl Shapiro called “the common dialogue of Americans.” Jarrell was also known as one of the most perceptive, erudite, and feared critics of midcentury American poetry. His essays were collected in the volumes Poetry and the Age (1953) and Kipling, Auden & Co. (1980). He also published a satirical campus novel, Pictures from an Institution (1954), translations of Chekov, Goethe, and the Grimm Brothers, as well as a number of children’s books during his lifetime.",
+      "",
+      "Jarrell earned his BA from Vanderbilt University, studying with poets associated with the “Fugitive” movement of Southern writing including John Crowe Ransom and Robert Penn Warren. But according to William Pritchard, “Jarrell showed little interest in Fugitive or ‘Southern’ political and cultural ideas. His early poetry, some of it published while he was still an undergraduate, is apocalyptic, surreal, and humourless—much indebted to Auden's example, though lacking Auden's wit and formal brilliance.” Jarrell followed Ransom, his mentor, to Kenyon College where he roomed with the young Robert Lowell and read in manuscript the poems that would become Lord Weary’s Castle. Lowell was to be one of the poets—along with Elizabeth Bishop, W.H. Auden, Marianne Moore, and Robert Frost—that Jarrell wrote about most often. Jarrell taught at the University of Texas, joined the Air Force during World War II, and published fierce reviews of contemporary poetry in journals such as the New Republic and the Nation. After the war, he taught at the University of North Carolina-Greensboro until his death in 1965. Jarrell’s final years were marked by struggles with mental illness and at least one suicide attempt. Though his death—he was hit by a car at dusk—was ruled accidental, it occurred during a period of emotional turmoil and, as Pritchard notes, “the circumstances will never be entirely clear.”",
+      "",
+      "Jarrell was noted for his acerbic, witty, and erudite criticism. In a volume of essays titled Randall Jarrell, 1914-1965, nearly all of the writers praised his critical faculties. They also noted, commented Stephen Spender in the New York Review of Books, “a cruel streak in Jarrell when he attacked poets he didn’t like.” Jarrell could be harsh, critics agreed, but his vehemence was a barometer of his love for literature. Robert Lowell wrote in the New York Times Book Review that Jarrell was “almost brutally serious about literature.” Lowell conceded that he was famed for his “murderous intuitive phrases,” but defended Jarrell by asserting that he took “as much joy in rescuing the reputation of a sleeping good writer as in chloroforming a mediocre one.” And Helen Vendler wrote in the New York Times Book Review that “nobody loved poets more or better than Randall Jarrell—and irony, indifference or superciliousness in the presence of the remarkable seemed to him capital sins” Suzanne Ferguson, in her book Poetry of Randall Jarrell, alleged that his criticism, with standards based on “broad, deep reading in all kinds of writing,” would “ask always, both explicitly and implicitly, whether the poem tells truth about the world; whether it helps the reader see a little farther, a little more clearly the dark and light of his situation.”"
+    ],
+    "type": "poet",
+    "year": "1914 - 1965",
+    "region": "US"
+  },
+  {
+    "id": 3,
+    "image": "../img/jameswright.jpeg",
+    "iimage": "img/jameswright.jpeg",
+    "name": "James Wright",
+    "bio": [
+      "James Wright was frequently referred to as one of America's finest contemporary poets. He was admired by critics and fellow poets alike for his willingness and ability to experiment with language and style, as well as for his thematic concerns. In the Minnesota Review, Peter A. Stitt wrote that Wright's work both represents and parallels the development of the best modern American poets: \"Reading the Collected Poems of James Wright from the point of view of style is like reading a history of the best contemporary American poetry. One discovers a development which could be said to parallel the development generally of our finest recent poets. . . . [This development shows] a movement generally away from rhetoric, regular meter and rhyme, towards plainer speech, looser rhythms and few rhymes.\"",
+      "",
+      "Wright's early poems, especially those in his first two volumes, are \"too literary, too subservient to the poems and poets of the past,\" according to Stitt. Other critics noted the elaborate rhymes, complex rhetoric, and traditional use of imagery in these early efforts. As Wright began to experiment \"he loosened his forms\" and \"whittled rhetoric to a succession of intense perceptions,\" Laurence Goldstein explained in the Michigan Quarterly Review. The result was that his speech became more natural and his settings, Marjorie G. Perloff reported in Contemporary Literature, \"are dream images rather than actual places.\" Paul Zweig of the Partisan Review outlined the impact of Wright's later style: \"Long before [he was awarded the Pulitzer Prize], Wright had been acknowledged by a generation of poets as the artisan of a new language for poetry: A style of pastoral surrealism, built around strong images and a simple spoken rhetoric. Wright's art lay not in complex grammar, but in a stark structure of perceptions which became their own statement.\"",
+      "",
+      "Although Wright experimented with style and language, his themes—loneliness and alienation—remained constant. \"Perhaps the most pervasive general theme in Wright's poetry . . . is that of separation,\" Stitt suggested. \"Separation appears in two guises—as the result of death and as the result of being at odds with one's society.\" James Seay, writing in the Georgia Review, agreed and elaborated: \"His most abiding concern has been loneliness. It is the one abstract word that recurs most frequently in his work. In a sense the theme of loneliness gives rise to, or is somehow connected with, most of Wright's other thematic concerns.\" The critic named death and \"Wright's compassion for what Auden . . . called 'social outsiders'—criminals, prostitutes, drunks, and social outcasts in general\" as the poet's other concerns. Seay continued, \"In Wright's poems these people are almost always lonely and damned.\""
+    ],
+    "type": "poet",
+    "year": "1927 - 1980",
+    "region": "US"
+  },
+  {
+    "id": 4,
+    "image": "../img/benJonson.jpeg",
+    "iimage": "img/benJonson.jpeg",
+    "name": "Ben Johnson",
+    "bio": [
+      "Ben Jonson is among the best-known writers and theorists of English Renaissance literature, second in reputation only to Shakespeare. A prolific dramatist and a man of letters highly learned in the classics, he profoundly influenced the Augustan age through his emphasis on the precepts of Horace, Aristotle, and other classical Greek and Latin thinkers. While he is now remembered primarily for his satirical comedies, he also distinguished himself as a poet, preeminent writer of masques, erudite defender of his work, and the originator of English literary criticism. Jonson’s pro­fessional reputation is often obscured by that of the man himself: bold, independent and aggressive. He fashioned for himself an image as the sole arbiter of taste, standing for erudition and the supremacy of clas­sical models against what he perceived as the general populace’s ignorant preference for the sensational. While his direct influence can be seen in each genre he undertook, his ultimate legacy is considered to be his literary craftsmanship, his strong sense of artistic form and control, and his role in bringing, as Alex­ander Pope noted, “critical learning into vogue.”",
+      "",
+      "Jonson was born in London shortly after the death of his father, a minister who claimed descent from the Scottish gentry. Despite a poor upbringing, he was educated at Westminster School under the renowned antiquary William Camden. He apparently left his schooling unwillingly to work with his stepfather as a bricklayer. He then served as a volunteer in the Low Countries in the Dutch war against Spain, and the sto­ry is told that he defeated a challenger in single com­bat between the opposing armies, stripping his van­quished opponent of his arms in the classical fashion. Returning to England by 1592, Jonson married Anne Lewis in 1594. Although the union was unhappy, it produced several children, all of whom Jonson out­lived. In the years following his marriage, he became an actor and also wrote numerous “get-penny” enter­tainments—financially motivated and quickly com­posed plays. He also provided respected emendations and additions to Thomas Kyd’s The Spanish Tragedy (1592). By 1597 he was writing for Philip Henslowe’s theatrical company. That year, Henslowe employed Jonson to finish Thomas Nashe’s satire The Isle of Dogs (now lost), but the play was suppressed for al­leged seditious content and Jonson was jailed for a short time. In 1598 the earliest of his extant works, Every Man in His Humour, was produced by the Lord Chamberlain’s Men with William Shakespeare—who became close friends with Jonson—in the cast. That same year, Jonson fell into further trouble after killing actor Gabriel Spencer in a duel, narrowly escaping the gallows by claiming benefit of clergy (meaning he was shown leniency for proving that he was literate and educated). While incarcerated at Newgate prison, Jon­son converted to Catholicism."
+    ],
+    "type": "poet",
+    "year": "1572 - 1637",
+    "region": "US"
+  },
+  {
+    "id": 5,
+    "image": "../img/berryman.png",
+    "iimage": "img/berryman.png",
+    "name": "John Berryman",
+    "bio": [
+      "A scholar and professor as well as a poet, John Berryman is best-known for The Dream Songs (1969), an intensely personal sequence of 385 poems which brought him the Pulitzer Prize and National Book Award. In these he invented a style and form able to accommodate a vast range of material while expressing his turbulent emotions.",
+      "",
+      "Born John Smith in McAlester, Oklahoma, in 1914, Berryman suffered a great loss at 12 when his father shot himself outside the boy’s window. This event haunted him throughout his life, and recurred as a subject in his poetry. After his mother remarried, John took his stepfather’s name and lived in Massachusetts and New York City.",
+      "",
+      "Berryman graduated from Columbia in 1936, then went to study at Cambridge University for two years on a scholarship. The first of three marriages came in 1942, and six years later he published his first important book of poetry, The Dispossessed (1948). A critical biography of the American writer Stephen Crane followed in 1950. In 1955, after teaching stints at Harvard and Princeton, Berryman took a position at the University of Minnesota, where he remained until his death."
+    ],
+    "type": "poet",
+    "year": "1914–1972",
+    "region": "US"
+  },
+  {
+    "id": 6,
+    "image": "../img/ritadove.jpeg",
+    "iimage": "img/ritadove.jpeg",
+    "name": "Rita Dove",
+    "bio": [
+      "Rita Dove was born in Akron, Ohio, the daughter of one of the first Black chemists in the tire industry. Dove was encouraged to read widely by her parents, and she excelled in school. She was named a Presidential Scholar, one of the top 100 high school graduates in the country, and attended Miami University in Oxford, Ohio as a National Merit Scholar. After graduating, Dove received a Fulbright to study at the University of Tübingen in West Germany, and later earned an MFA at the Iowa Writers’ Workshop where she met her husband, the German writer Fred Viebahn. Dove made her formal literary debut in 1980 with the poetry collection The Yellow House on the Corner, which received praise for its sense of history combined with individual detail. The book heralded the start of long and productive career, and it also announced the distinctive style that Dove continues to develop. In works like the verse-novel Thomas and Beulah (1986), which won the Pulitzer Prize, On the Bus with Rosa Parks (1999), a finalist for the National Book Critics Circle Award, and Sonata Mulattica (2009), Dove treats historical events with a personal touch, addressing her grandparents’ life and marriage in early 20th-century Ohio, the battles and triumphs of the Civil Rights era, and the forgotten career of Black violinist and friend to Beethoven, George Polgreen Bridgetower. Poet Brenda Shaughnessy noted that “Dove is a master at transforming a public or historic element—re-envisioning a spectacle and unearthing the heartfelt, wildly original private thoughts such historic moments always contain.”",
+      "",
+      "Dove received the 2017 NAACP Image Award and the 2017 Library of Virginia Award for her Collected Poems: 1974-2004 (2016), which was a finalist for the National Book Award. Her other numerous honors and awards include the Wallace Stevens Award from the Academy of American Poets, the Heinz Award in the Arts and Humanities, a Common Wealth Award, and a National Humanities Medal.",
+      "",
+      "Her work is known for its lyricism and beauty as well as its sense of history and political scope. She frequently writes about other art forms, including music in Sonata Mulattica (2009) and dance in the collection American Smooth (2004). Writing in the New York Times, Emily Nussbaum noted how dance and poetry connect for Dove: “For Dove, dance is an implicit parallel to poetry. Each is an expression of grace performed within limits; each an art weighted by history but malleable enough to form something utterly new.” Sonata Mulattica follows the tempestuous life of 18th-century violinist Bridgetower, who took Europe by storm, had a famous sonata composed for him, and died in obscurity. The Los Angeles Times described Dove’s book as an “ambitious effort, using multiple distinctive voices and perspectives to chronicle the complex tale ‘of light and shadow, / what we hear and the silence that follows.’” Poet Mark Doty called the work “richly imagined,” with “the sweep and vivid characters of a novel, but … written with a poet’s economy, an eye for the exact detail.”"
+    ],
+    "type": "poet",
+    "year": "1952 - Present",
+    "region": "US"
+  }
+]

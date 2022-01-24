@@ -58,6 +58,15 @@ class Blogs {
   }
 }
 
+class ProductsHome {
+  async getProductsHome() {
+    const response = await fetch("../data/products.json");
+    const data = await response.json();
+    console.log(data);
+    return data;
+  }
+}
+
 class UI {
   // HOME DAILY
   showHomeDaily(param) {
@@ -67,7 +76,7 @@ class UI {
     let poets = JSON.parse(localStorage.getItem("poets"));
     let poet = poets[param];
 
-    let products = JSON.parse(localStorage.getItem("products"));
+    let products = JSON.parse(localStorage.getItem("productsHome"));
     let product = products[param];
 
     let content = `
@@ -120,7 +129,7 @@ class UI {
   showMonthly() {
     let poems = JSON.parse(localStorage.getItem("poems"));
     let poets = JSON.parse(localStorage.getItem("poets"));
-    let products = JSON.parse(localStorage.getItem("products"));
+    let products = JSON.parse(localStorage.getItem("productsHome"));
 
     // ------------- SHOW POEMS MONTHLY -------------
     async function showPoems() {
@@ -536,8 +545,12 @@ class Storage {
     return poets.find((poets) => poets.id == id);
   }
 
+  static saveProductsHome(productsHome) {
+    localStorage.setItem("productsHome", JSON.stringify(productsHome));
+  }
+
   static getProduct(id) {
-    let products = JSON.parse(localStorage.getItem("products"));
+    let products = JSON.parse(localStorage.getItem("productsHome"));
     return products.find((product) => product.id == id);
   }
 
@@ -556,9 +569,14 @@ document.addEventListener("DOMContentLoaded", () => {
   let ui = new UI();
   let poets = new Poets();
   let blog = new Blogs();
+  let pHome = new ProductsHome();
 
   ui.showFooter();
   ui.backToPrevious();
+
+  pHome.getProductsHome().then((data) => {
+    Storage.saveProductsHome(data);
+  });
 
   poems.getPoems().then((data) => {
     Storage.savePoems(data);
@@ -597,3 +615,6 @@ document.addEventListener("DOMContentLoaded", () => {
   ui.showBlogs();
   ui.showSingleblog(id);
 });
+if (window.location.href.substr(-2) !== "?r") {
+  window.location = window.location.href + "?r";
+}

@@ -1,3 +1,4 @@
+// windows.location.reload();
 // products
 let productsDOM = document.querySelector(".products-container");
 
@@ -236,6 +237,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   ui.setupApp();
   ui.showPopup();
+
+  // product.getProducts();
 
   product
     .getProducts()

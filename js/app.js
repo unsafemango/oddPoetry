@@ -62,21 +62,47 @@ class ProductsHome {
   async getProductsHome() {
     const response = await fetch("../data/products.json");
     const data = await response.json();
-    console.log(data);
     return data;
+  }
+}
+
+class Data {
+  getPoems() {
+    let p = new Poems();
+
+    return p.getPoems().then((data) => {
+      return data;
+    });
+  }
+
+  getProducts() {
+    let p = new ProductsHome();
+
+    return p.getProductsHome().then((data) => {
+      return data;
+    });
+  }
+
+  getPoets() {
+    let p = new Poets();
+
+    return p.getPoets().then((data) => {
+      return data;
+    });
   }
 }
 
 class UI {
   // HOME DAILY
-  showHomeDaily(param) {
-    let poems = JSON.parse(localStorage.getItem("poems"));
+  async showHomeDaily(param) {
+    let data = new Data();
+    let poems = await data.getPoems();
     let poem = poems[param];
 
-    let poets = JSON.parse(localStorage.getItem("poets"));
+    let poets = await data.getPoets();
     let poet = poets[param];
 
-    let products = JSON.parse(localStorage.getItem("productsHome"));
+    let products = await data.getProducts();
     let product = products[param];
 
     let content = `
@@ -88,7 +114,7 @@ class UI {
         </div>
         <img src="${poem.iimage}" alt="${poem.title}" class="img" />
         <a href="poems/poem.html?id=${poem.id}" class="title">${poem.title}</a>
-        <p id="author">Author: <a href="poets/poet.html?id=${poet.id}" class="author">${poem.author}</a></p>
+        <p id="author">Author: <a href="poets/poet.html?id=2" class="author">${poem.author}</a></p>
       </div>
       <!-- ----------- END OF DAILY ----------- -->
 
@@ -126,10 +152,11 @@ class UI {
   }
 
   // SHOW MONTHLY CONTENT
-  showMonthly() {
-    let poems = JSON.parse(localStorage.getItem("poems"));
-    let poets = JSON.parse(localStorage.getItem("poets"));
-    let products = JSON.parse(localStorage.getItem("productsHome"));
+  async showMonthly() {
+    let data = new Data();
+    let poems = await data.getPoems();
+    let poets = await data.getPoets();
+    let products = await data.getProducts();
 
     // ------------- SHOW POEMS MONTHLY -------------
     async function showPoems() {
@@ -615,9 +642,3 @@ document.addEventListener("DOMContentLoaded", () => {
   ui.showBlogs();
   ui.showSingleblog(id);
 });
-if (window.location.href.substr(-2) !== "?r") {
-  window.location = window.location.href + "?r";
-}
-if (window.location.href.substr(-2) !== "?r") {
-  window.location = window.location.href + "?r";
-}

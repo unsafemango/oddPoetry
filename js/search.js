@@ -1,43 +1,44 @@
-let poems = JSON.parse(localStorage.getItem("poems"));
-let titles = poems.map((poem) => {
-  return { id: poem.id, title: poem.title, type: poem.type };
-});
-
-let poets = JSON.parse(localStorage.getItem("poets"));
-let names = poets.map((poet) => {
-  return { id: poet.id, name: poet.name, type: poet.type };
-});
-
-let database = [...titles, ...names];
-let searchContent = document.querySelector(".search-content");
-
-let searchBtn = document.querySelector(".search .fa-search");
-let closeSearchBtn = document.querySelector(".close-search .fa-window-close");
-
-let searchBar = document.querySelector("#search");
-
-let searchOverlay = document.querySelector(".search-overlay");
-
-let searchString;
-
-// searchbar functionality
-searchBar.addEventListener("keyup", (e) => {
-  searchString = e.target.value;
-
-  // search functionality
-  const filteredSearch = database.filter((data) => {
-    let { name, title } = data;
-    if (name) {
-      return name.toLowerCase().includes(searchString.toLowerCase());
-    } else return title.toLowerCase().includes(searchString.toLowerCase());
+function search() {
+  let poems = JSON.parse(localStorage.getItem("poems"));
+  let titles = poems.map((poem) => {
+    return { id: poem.id, title: poem.title, type: poem.type };
   });
 
-  // show each search result
-  if (searchString == "") {
-    searchContent.innerHTML = `
+  let poets = JSON.parse(localStorage.getItem("poets"));
+  let names = poets.map((poet) => {
+    return { id: poet.id, name: poet.name, type: poet.type };
+  });
+
+  let database = [...titles, ...names];
+  let searchContent = document.querySelector(".search-content");
+
+  let searchBtn = document.querySelector(".search .fa-search");
+  let closeSearchBtn = document.querySelector(".close-search .fa-window-close");
+
+  let searchBar = document.querySelector("#search");
+
+  let searchOverlay = document.querySelector(".search-overlay");
+
+  let searchString;
+
+  // searchbar functionality
+  searchBar.addEventListener("keyup", (e) => {
+    searchString = e.target.value;
+
+    // search functionality
+    const filteredSearch = database.filter((data) => {
+      let { name, title } = data;
+      if (name) {
+        return name.toLowerCase().includes(searchString.toLowerCase());
+      } else return title.toLowerCase().includes(searchString.toLowerCase());
+    });
+
+    // show each search result
+    if (searchString == "") {
+      searchContent.innerHTML = `
     <p class="no-results">No search results available</p>`;
-  } else if (filteredSearch.length > 0) {
-    searchContent.innerHTML = `
+    } else if (filteredSearch.length > 0) {
+      searchContent.innerHTML = `
 ${filteredSearch
   .map((data) => {
     if (data.type == "poet") {
@@ -54,18 +55,27 @@ ${filteredSearch
   })
   .join("")}
 `;
-  } else {
-    searchContent.innerHTML = `<p class="no-results">No search results available</p>`;
-  }
-});
+    } else {
+      searchContent.innerHTML = `<p class="no-results">No search results available</p>`;
+    }
+  });
 
-// show search results
-searchBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  searchOverlay.classList.toggle("show");
-});
+  // show search results
+  searchBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    searchOverlay.classList.toggle("show");
+  });
 
-// close search results
-closeSearchBtn.addEventListener("click", () => {
-  searchOverlay.classList.remove("show");
-});
+  // close search results
+  closeSearchBtn.addEventListener("click", () => {
+    searchOverlay.classList.remove("show");
+  });
+}
+
+if (document.readyState == "loading") {
+  // still loading, wait for the event
+  document.addEventListener("DOMContentLoaded", search);
+} else {
+  // DOM is ready!
+  search();
+}

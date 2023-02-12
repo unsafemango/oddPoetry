@@ -24,6 +24,8 @@
 
   --mb: 40px;
   --lh: 1.4rem;
+
+  --nav-height: 80px;
 }
 
 /* ------------- navigation ------------ */
@@ -34,7 +36,7 @@ nav {
   background-color: var(--main-white);
   color: var(--main-black);
   justify-content: space-between;
-  height: 80px;
+  height: var(--nav-height);
   align-items: center;
   margin-bottom: var(--mb);
   position: sticky;
@@ -50,6 +52,13 @@ header a {
   color: var(--main-black);
   padding-bottom: 7px;
   border-bottom: 4px solid var(--main-red);
+}
+
+nav .nav-inner {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .search input {
@@ -93,8 +102,18 @@ nav ul li a:hover {
   color: var(--main-red);
 }
 
+nav .toggle-btns {
+  display: flex;
+  width: 5rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
 nav .fa-bars {
   display: none;
+  color: var(--main-black);
+  font-size: 2rem;
 }
 
 nav .cart-btn {
@@ -561,6 +580,7 @@ nav .cart-btn .cart-item-count {
   text-transform: uppercase;
   letter-spacing: var(--main-spacing);
   cursor: pointer;
+  border-radius: 7px;
 }
 
 .banner-container .banner-btn:hover,
@@ -822,7 +842,7 @@ nav .cart-btn .cart-item-count {
 }
 
 .poem-container .poet {
-  width: 20rem;
+  width: 332px;
   padding: 2rem 1.5rem;
   box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.4);
   max-height: 900px;
@@ -1122,3 +1142,188 @@ footer .socials a {
   background-color: var(--main-black);
 }
 /* ----------- end of footer ----------- */
+
+/* large devices */
+@media screen and (max-width: 1400px) {
+  nav .nav-inner {
+    width: 60%;
+    transition: 0.4s;
+  }
+
+  .search input {
+    width: 200px;
+  }
+
+  nav ul {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  nav .nav-inner {
+    display: none;
+    transition: 0.4s;
+  }
+
+  nav .nav-inner.show {
+    display: flex;
+    transition: 0.4s;
+  }
+
+  nav .nav-inner {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background: #f5abab;
+    width: 100%;
+    height: calc(100vh - var(--nav-height));
+    flex-direction: column-reverse;
+    justify-content: start;
+  }
+
+  nav .nav-inner .search {
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav .nav-inner ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav .nav-inner ul li {
+    margin-top: 20px;
+  }
+
+  nav .fa-bars {
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* HOME PAGE */
+  .home-daily,
+  .month-poems-container,
+  .month-poets-container,
+  .month-products-container {
+    display: grid;
+    grid-template-columns: repeat(1, 332px);
+    justify-content: center;
+  }
+
+  .home-daily .col-3:nth-of-type(2),
+  .poem-col-3:nth-of-type(2),
+  .poet-col-3:nth-of-type(2),
+  .product-col-3:nth-of-type(2) {
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    border-left: none;
+    border-right: none;
+  }
+
+  .home-daily .col-3,
+  .poet-col-3,
+  .product-col-3 {
+    padding: 3rem 0;
+  }
+
+  .poem-col-3,
+  .poet-col-3 {
+    width: 100%;
+  }
+
+  nav .fa-bars {
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+  }
+
+  /* POEMS PAGE */
+  .poems-list {
+    grid-template-columns: repeat(1, 332px);
+    justify-content: center;
+  }
+
+  .poems-list .poem:nth-of-type(odd) {
+    border-right: none;
+  }
+
+  .poems-list .title {
+    display: inline;
+  }
+
+  /* POEM PAGE */
+  .poem-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .poem-container .poem {
+    margin-bottom: 30px;
+  }
+
+  /* POETS PAGE */
+  .poets-list,
+  .blog-list {
+    grid-template-columns: repeat(1, 332px);
+    justify-content: center;
+    row-gap: 3rem;
+  }
+
+  .poets-list .poet:nth-of-type(3n - 1),
+  .blog-list .poet:nth-of-type(3n - 1) {
+    border-right: none;
+    border-left: none;
+  }
+
+  /* POET PAGE */
+  .poet-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .poet-container .poet-content .poet-bio,
+  .blog-container .poet-content .poet-bio {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .poet-container .poet-content .poet-poems {
+    width: 100%;
+  }
+
+  /* SHOP  */
+  .banner-container {
+    background-size: cover;
+  }
+
+  .banner-container .banner-title {
+    font-size: 2rem;
+    display: inline;
+  }
+
+  .banner-container .banner-btn,
+  .clear-cart,
+  .proceed {
+    padding: 10px 1rem;
+  }
+
+  .shop-container .products-title h2,
+  .page-header {
+    font-size: large;
+  }
+
+  .shop-container .products-container {
+    grid-template-columns: repeat(1, 332px);
+    justify-content: center;
+  }
+
+  /* BLOG PAGE */
+  .poet-container .poet-header .desc .poet-name,
+  .blog-container .poet-header .desc .poet-name {
+    font-size: large;
+  }
+}

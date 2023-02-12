@@ -457,7 +457,7 @@ class UI {
         return `
         <!-- ----------- BLOG ----------- -->
       <div class="poet">
-        <img src="${blog.image}" alt="image" class="img" />
+        <img src="../img/banner.jpg" alt="image" class="img" />
         <a href="./singleblog.html?id=${blog.id}" class="name" data-id="${
           blog.id
         }">${blog.title}</a>
@@ -482,7 +482,7 @@ class UI {
     let content = `
       <!-- ----------- BLOG HEADER ----------- -->
       <div class="poet-header">
-        <img src="${blog.image}" alt="poet-image" />
+        <img src="../img/banner.jpg" alt="poet-image" />
         <div class="desc">
           <p class="poet-name">${blog.title}</p>
         </div>
